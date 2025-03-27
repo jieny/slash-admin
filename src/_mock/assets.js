@@ -2,6 +2,7 @@ import useUserStore from "@/store/userStore";
 import { faker } from "@faker-js/faker";
 
 import { BasicStatus, PermissionType } from "#/enum";
+
 /**
  * Organization data mock
  */
@@ -511,6 +512,16 @@ const OTHERS_PERMISSION = [
 		type: PermissionType.MENU,
 		route: "blank",
 		component: "/sys/others/blank.tsx",
+	},
+	{
+		id: "0941594969900757",
+		parentId: "",
+		label: "sys.menu.test",
+		name: "Disabled",
+		icon: "ic_blank",
+		type: PermissionType.MENU,
+		route: "test",
+		component: "/sys/others/test.tsx",
 	},
 ];
 
